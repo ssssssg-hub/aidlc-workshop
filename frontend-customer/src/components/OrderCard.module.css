@@ -1,0 +1,10 @@
+.card { padding: 12px; border: 1px solid #e0e0e0; border-radius: 8px; margin-bottom: 8px; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.orderNum { font-weight: 600; font-size: 15px; margin: 0; }
+.time { font-size: 13px; color: #757575; }
+.status { font-size: 13px; font-weight: 600; padding: 2px 8px; border-radius: 12px; }
+.PENDING { background: #fff3e0; color: #e65100; }
+.PREPARING { background: #e3f2fd; color: #1565c0; }
+.COMPLETED { background: #e8f5e9; color: #2e7d32; }
+.itemRow { font-size: 14px; color: #424242; margin: 2px 0; }
+.total { font-size: 15px; font-weight: 600; color: #1976d2; margin-top: 8px; }

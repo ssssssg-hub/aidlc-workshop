@@ -1,0 +1,17 @@
+.item {
+  display: flex; align-items: center; gap: 12px; padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.info { flex: 1; }
+.name { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
+.subtotal { font-size: 14px; color: #757575; margin: 0; }
+.controls { display: flex; align-items: center; gap: 8px; }
+.qtyBtn {
+  min-width: 36px; min-height: 36px; border: 1px solid #e0e0e0; border-radius: 8px;
+  background: #fff; cursor: pointer; font-size: 18px;
+}
+.qty { font-size: 16px; min-width: 24px; text-align: center; }
+.removeBtn {
+  min-width: 44px; min-height: 44px; border: none; background: none;
+  color: #d32f2f; cursor: pointer; font-size: 18px;
+}
