@@ -18,3 +18,7 @@ node_modules/
 target/
 build/
 dist/
+
+# AIDLC
+aidlc-state.md
+audit.md
