@@ -1,0 +1,13 @@
+.page { padding: 16px 16px 80px; max-width: 480px; margin: 0 auto; }
+.title { font-size: 18px; font-weight: 700; margin: 0 0 16px; }
+.empty { text-align: center; color: #757575; padding: 40px 0; }
+.actions { display: flex; gap: 8px; margin-top: 16px; }
+.clearBtn {
+  flex: 1; min-height: 44px; border: 1px solid #d32f2f; border-radius: 8px;
+  background: #fff; color: #d32f2f; cursor: pointer;
+}
+.orderBtn {
+  flex: 2; min-height: 48px; border: none; border-radius: 8px;
+  background: #1976d2; color: #fff; font-size: 16px; cursor: pointer;
+}
+.orderBtn:disabled { background: #bdbdbd; cursor: not-allowed; }

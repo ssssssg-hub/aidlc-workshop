@@ -1,0 +1,8 @@
+.page { padding: 16px 16px 80px; max-width: 480px; margin: 0 auto; }
+.title { font-size: 18px; font-weight: 700; margin: 0 0 16px; }
+.item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+.confirmBtn {
+  width: 100%; min-height: 48px; border: none; border-radius: 8px;
+  background: #1976d2; color: #fff; font-size: 16px; cursor: pointer; margin-top: 16px;
+}
+.confirmBtn:disabled { background: #bdbdbd; cursor: not-allowed; }

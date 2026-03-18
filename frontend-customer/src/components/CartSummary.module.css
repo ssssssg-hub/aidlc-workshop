@@ -1,0 +1,6 @@
+.summary {
+  padding: 16px; border-top: 2px solid #212121;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.label { font-size: 16px; font-weight: 600; }
+.amount { font-size: 20px; font-weight: 700; color: #1976d2; }
