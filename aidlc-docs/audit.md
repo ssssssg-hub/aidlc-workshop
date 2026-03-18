@@ -210,83 +210,124 @@ AI-DLC 워크플로우를 시작해봅시다."
 **Context**: Functional Design Unit 1 - User approved, proceeding to NFR Requirements
 
 ---
-## CONSTRUCTION - Unit 2 Customer App Start
-**Timestamp**: 2026-03-18T16:01:52+09:00
-**User Input**: "이제 유닛 1,2,3이 나뉘어졌어 나는 그 중 unit 2 customer 를 맡았어. 다음 단계 진행해보자"
-**AI Response**: Unit 2 (Customer App) Construction Phase 시작. Functional Design 단계 진행.
-**Context**: User assigned to Unit 2 (Customer App), starting Construction Phase - Functional Design
+
+## Unit 3 Admin App - Session Start
+**Timestamp**: 2026-03-18T16:00:20+09:00
+**User Input**: "unit3를 진행할거야. 1,2는 다른 사람들이 하고 있기 때문에 내 담당은 unit3이고, 문서들을 기반으로 api 연동을 고려해 개발을 진행해보자"
+**AI Response**: Unit 3 (Admin App) CONSTRUCTION 단계 시작. 기존 INCEPTION 아티팩트 및 Unit 1 Functional Design 로드 완료. Functional Design부터 진행.
+**Context**: Unit 3 Admin App - Construction phase start, user is responsible for Unit 3 only
 
 ---
-## CONSTRUCTION - Functional Design Unit 2 (Answers Received)
-**Timestamp**: 2026-03-18T16:04:48+09:00
-**User Input**: "수정 완료"
-**AI Response**: 답변 확인: Q1:A(하단 탭 네비게이션), Q2:A(별도 장바구니 페이지), Q3:A(React Context+useReducer), Q4:A(fetch API), Q5:A(모달 스피너), Q6:A(CSS Modules). 모호한 답변 없음. 아티팩트 생성 진행.
-**Context**: Functional Design Unit 2 - All answers clear, proceeding to artifact generation
+
+## CONSTRUCTION - Functional Design Unit 3 (Plan Created)
+**Timestamp**: 2026-03-18T16:01:00+09:00
+**AI Response**: Unit 3 Admin App Functional Design plan 생성 (4개 질문 포함). 사용자 답변 대기.
+**Context**: Functional Design Unit 3 - Plan with questions created, awaiting user answers
 
 ---
-## CONSTRUCTION - Functional Design Unit 2 (Approved)
-**Timestamp**: 2026-03-18T16:08:59+09:00
-**User Input**: "다음 단계로 넘어가자"
-**AI Response**: Functional Design 승인 확인. NFR Requirements 단계로 진행.
-**Context**: Functional Design Unit 2 - User approved, proceeding to NFR Requirements
+
+## CONSTRUCTION - Functional Design Unit 3 (Answers Received)
+**Timestamp**: 2026-03-18T16:03:03+09:00
+**User Input**: "완료"
+**AI Response**: 답변 확인: Q1:B(Redux Toolkit), Q2:A(MUI), Q3:B(위/아래 화살표), Q4:C(최신 5개). 모순 없음. Functional Design 아티팩트 생성 완료: frontend-components.md, business-logic-model.md, business-rules.md.
+**Context**: Functional Design Unit 3 - Answers validated, artifacts generated
 
 ---
-## CONSTRUCTION - NFR Requirements Unit 2 (Answers Received)
-**Timestamp**: 2026-03-18T16:11:27+09:00
-**User Input**: "수정했어"
-**AI Response**: 답변 확인: Q1:C(5초 이내 MVP), Q2:C(로딩 인디케이터만), Q3:A(에러+재시도), Q4:A(기본 접근성), Q5:A(모던 브라우저), Q6:A(200KB gzip). 아티팩트 생성 완료.
-**Context**: NFR Requirements Unit 2 - Answers validated, artifacts generated
 
----
-## CONSTRUCTION - NFR Requirements Unit 2 (Approved)
-**Timestamp**: 2026-03-18T16:13:40+09:00
+## CONSTRUCTION - Functional Design Unit 3 (Approved)
+**Timestamp**: 2026-03-18T16:06:16+09:00
 **User Input**: "다음단계로"
+**AI Response**: Functional Design 승인 확인. NFR Requirements 단계로 진행.
+**Context**: Functional Design Unit 3 - User approved, proceeding to NFR Requirements
+
+---
+
+## CONSTRUCTION - NFR Requirements Unit 3 (Plan Created)
+**Timestamp**: 2026-03-18T16:06:30+09:00
+**AI Response**: Unit 3 Admin App NFR Requirements plan 생성 (3개 질문 포함). 사용자 답변 대기.
+**Context**: NFR Requirements Unit 3 - Plan with questions created, awaiting user answers
+
+---
+
+## CONSTRUCTION - NFR Requirements Unit 3 (Answers Received & Artifacts Generated)
+**Timestamp**: 2026-03-18T16:09:32+09:00
+**User Input**: "답변완료"
+**AI Response**: 답변 확인: Q1:C(Chrome+Edge+Firefox+Safari), Q2:A(EventSource 기본 재연결), Q3:B(loglevel 라이브러리). 모순 없음. NFR Requirements 아티팩트 생성 완료: nfr-requirements.md, tech-stack-decisions.md. Security Extension 준수 확인 (8개 적용, 7개 N/A).
+**Context**: NFR Requirements Unit 3 - Answers validated, artifacts generated
+
+---
+
+## CONSTRUCTION - NFR Requirements Unit 3 (Approved)
+**Timestamp**: 2026-03-18T16:11:17+09:00
+**User Input**: "다음 단계로"
 **AI Response**: NFR Requirements 승인 확인. NFR Design 단계로 진행.
-**Context**: NFR Requirements Unit 2 - User approved, proceeding to NFR Design
+**Context**: NFR Requirements Unit 3 - User approved, proceeding to NFR Design
 
 ---
-## CONSTRUCTION - NFR Design Unit 2 (Answers & Approved)
-**Timestamp**: 2026-03-18T16:18:37+09:00
-**User Input**: "code generation 단계 전까지는 묻지 말고 모두 Y로 해줘 나의 의견이 필요한 부분조차 너가 추천해서 해줘"
-**AI Response**: NFR Design 답변 적용 (Q1:B 자동1회재시도, Q2:A 페이지단위 lazy loading, Q3:A lazy loading+플레이스홀더). 아티팩트 생성: nfr-design-patterns.md, logical-components.md. 자동 승인 처리.
-**Context**: NFR Design Unit 2 - User requested auto-approve all stages until Code Generation
+
+## CONSTRUCTION - NFR Design Unit 3 (Complete)
+**Timestamp**: 2026-03-18T16:11:45+09:00
+**AI Response**: NFR Design 아티팩트 생성 완료: nfr-design-patterns.md (3개 카테고리, 10개 패턴), logical-components.md (프로젝트 구조, Redux store 구조, API 매핑). 질문 불필요 (프론트엔드 NFR 패턴이 명확). 사용자 승인 대기.
+**Context**: NFR Design Unit 3 - Artifacts generated, awaiting user approval
 
 ---
-## CONSTRUCTION - Infrastructure Design Unit 2 (Auto-Approved)
-**Timestamp**: 2026-03-18T16:18:37+09:00
-**AI Response**: Infrastructure Design 아티팩트 생성: Docker 멀티스테이지 빌드 (node:20-alpine → nginx:alpine), Nginx SPA 라우팅 + API 프록시 + Security 헤더, 포트 3001. 자동 승인 처리.
-**Context**: Infrastructure Design Unit 2 - Auto-approved per user request
+
+## CONSTRUCTION - NFR Design Unit 3 (Approved)
+**Timestamp**: 2026-03-18T16:13:57+09:00
+**User Input**: "다음단계로"
+**AI Response**: NFR Design 승인 확인. Infrastructure Design 단계로 진행.
+**Context**: NFR Design Unit 3 - User approved, proceeding to Infrastructure Design
 
 ---
-## CONSTRUCTION - Code Generation Unit 2 (Plan Created)
-**Timestamp**: 2026-03-18T16:18:37+09:00
-**AI Response**: Code Generation Plan 생성 완료. 13개 Step, 전체 스토리 18개 커버. 사용자 승인 대기.
-**Context**: Code Generation Unit 2 Part 1 - Plan created, awaiting approval
+
+## CONSTRUCTION - Infrastructure Design Unit 3 (Complete)
+**Timestamp**: 2026-03-18T16:14:15+09:00
+**AI Response**: Infrastructure Design 아티팩트 생성 완료: infrastructure-design.md (Docker multi-stage build, nginx 설정, Docker Compose 서비스, 환경 변수). 프론트엔드 SPA + Docker Compose 구조가 명확하여 질문 불필요. 사용자 승인 대기.
+**Context**: Infrastructure Design Unit 3 - Artifact generated, awaiting user approval
 
 ---
-## CONSTRUCTION - Code Generation Unit 2 (Plan Approved)
-**Timestamp**: 2026-03-18T16:21:37+09:00
-**User Input**: "다음 단계 시작해줘"
+
+## CONSTRUCTION - Infrastructure Design Unit 3 (Approved)
+**Timestamp**: 2026-03-18T16:15:09+09:00
+**User Input**: "next"
+**AI Response**: Infrastructure Design 승인 확인. Code Generation 단계로 진행.
+**Context**: Infrastructure Design Unit 3 - User approved, proceeding to Code Generation
+
+---
+
+## CONSTRUCTION - Code Generation Unit 3 Part 1 (Plan Created)
+**Timestamp**: 2026-03-18T16:15:30+09:00
+**AI Response**: Unit 3 Admin App Code Generation plan 생성 완료. 33개 Step: Project Setup(2) + Foundation(4) + Redux Slices(5) + API Services(5) + Hooks(1) + Components(1) + Pages(7) + Unit Tests(3) + Deployment(3) + Documentation(1). 15개 스토리 전체 매핑. 사용자 승인 대기.
+**Context**: Code Generation Unit 3 Part 1 - Plan created, awaiting user approval
+
+---
+
+## CONSTRUCTION - Code Generation Unit 3 Part 1 (Approved)
+**Timestamp**: 2026-03-18T16:17:30+09:00
+**User Input**: "진행"
 **AI Response**: Code Generation Plan 승인 확인. Part 2 Generation 시작.
-**Context**: Code Generation Unit 2 - Plan approved, starting code generation
+**Context**: Code Generation Unit 3 Part 1 - User approved plan, proceeding to Part 2 Generation
 
 ---
-## CONSTRUCTION - Code Generation Unit 2 (Complete)
-**Timestamp**: 2026-03-18T16:21:37+09:00
-**AI Response**: Code Generation 완료. 13개 Step 모두 실행. 설정 7파일, 타입 1, 유틸 3, API 5, Store 2, 컴포넌트 11+CSS, 페이지 6+CSS, 엔트리 3, 테스트 13, 요약 1. 전체 스토리 18개 커버. 사용자 승인 대기.
-**Context**: Code Generation Unit 2 - All steps complete, awaiting user approval
+
+## CONSTRUCTION - Code Generation Unit 3 Part 2 (Complete)
+**Timestamp**: 2026-03-18T16:20:00+09:00
+**AI Response**: Code Generation 완료. 44개 파일 생성: 프로젝트 설정(3), Foundation(4), Redux Slices(5), API Services(6), Hooks(3), Components(4), Pages(7), App Entry(3), Unit Tests(6), Deployment(3). 15개 스토리 전체 구현. 사용자 승인 대기.
+**Context**: Code Generation Unit 3 Part 2 - All 33 steps completed, awaiting user approval
 
 ---
-## CONSTRUCTION - Code Generation Unit 2 (Approved)
-**Timestamp**: 2026-03-18T16:34:03+09:00
-**User Input**: "빌드&테스트 단계 진행해줘"
-**AI Response**: Code Generation 승인 확인. Build & Test 단계 진행.
-**Context**: Code Generation Unit 2 - User approved, proceeding to Build and Test
+
+## CONSTRUCTION - Code Generation Unit 3 (Approved)
+**Timestamp**: 2026-03-18T16:29:13+09:00
+**User Input**: "next stage"
+**AI Response**: Code Generation 승인 확인. Build & Test 단계로 진행.
+**Context**: Code Generation Unit 3 - User approved, proceeding to Build & Test
 
 ---
-## CONSTRUCTION - Build and Test Unit 2 (Complete)
-**Timestamp**: 2026-03-18T16:34:03+09:00
-**AI Response**: Build and Test 지침 문서 5개 생성 완료: build-instructions.md, unit-test-instructions.md, integration-test-instructions.md, performance-test-instructions.md, build-and-test-summary.md
-**Context**: Build and Test Unit 2 - All instruction files generated
+
+## CONSTRUCTION - Build and Test Unit 3 (Complete)
+**Timestamp**: 2026-03-18T16:30:00+09:00
+**AI Response**: Build and Test instruction 파일 5개 생성 완료: build-instructions.md, unit-test-instructions.md, integration-test-instructions.md (8개 시나리오), performance-test-instructions.md, build-and-test-summary.md. Security Extension 전체 준수. 사용자 승인 대기.
+**Context**: Build and Test Unit 3 - All instruction files generated, awaiting user approval
 
 ---

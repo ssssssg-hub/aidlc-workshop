@@ -1,0 +1,14 @@
+# Docker Compose — Admin App Service (Unit 3)
+# 전체 docker-compose.yml에 아래 서비스를 추가하세요.
+
+services:
+  frontend-admin:
+    build:
+      context: ./frontend-admin
+      dockerfile: Dockerfile
+    ports:
+      - "3001:80"
+    depends_on:
+      - backend
+    environment:
+      - VITE_API_BASE_URL=/api
