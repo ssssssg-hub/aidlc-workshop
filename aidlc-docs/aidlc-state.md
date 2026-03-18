@@ -3,7 +3,7 @@
 ## Project Information
 - **Project Type**: Greenfield
 - **Start Date**: 2026-03-18T11:43:13+09:00
-- **Current Stage**: CONSTRUCTION - NFR Requirements (Unit 1: Backend API)
+- **Current Stage**: CONSTRUCTION - Build and Test (Complete, Awaiting Approval)
 
 ## Workspace State
 - **Existing Code**: No
@@ -28,8 +28,8 @@
 - [x] INCEPTION - Application Design
 - [x] INCEPTION - Units Generation
 - [x] CONSTRUCTION - Functional Design
-- [ ] CONSTRUCTION - NFR Requirements
-- [ ] CONSTRUCTION - NFR Design
-- [ ] CONSTRUCTION - Infrastructure Design
-- [ ] CONSTRUCTION - Code Generation
-- [ ] CONSTRUCTION - Build and Test
+- [x] CONSTRUCTION - NFR Requirements
+- [x] CONSTRUCTION - NFR Design
+- [x] CONSTRUCTION - Infrastructure Design (SKIPPED - Docker Compose 로컬, 이미 정의됨)
+- [x] CONSTRUCTION - Code Generation
+- [x] CONSTRUCTION - Build and Test

@@ -1,0 +1,71 @@
+spring:
+  application:
+    name: tableorder-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tableorder
+    username: ${DB_USERNAME:tableorder}
+    password: ${DB_PASSWORD:tableorder}
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+  lifecycle:
+    timeout-per-shutdown-phase: 30s
+
+server:
+  port: 8080
+  shutdown: graceful
+  ssl:
+    enabled: ${SSL_ENABLED:false}
+    key-store: ${SSL_KEY_STORE:}
+    key-store-password: ${SSL_KEY_STORE_PASSWORD:}
+    key-store-type: PKCS12
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:default-dev-secret-key-change-in-production-min-256-bits-long!!}
+    expiration-hours: 16
+  image:
+    upload-dir: ${IMAGE_UPLOAD_DIR:./uploads/images}
+    serve-path: /api/images
+  openai:
+    api-key: ${OPENAI_API_KEY:}
+    api-url: https://api.openai.com/v1/chat/completions
+    model: gpt-4o-mini
+    connect-timeout: 5000
+    read-timeout: 30000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: when-authorized
+
+logging:
+  level:
+    root: INFO
+    com.tableorder: DEBUG
