@@ -3,7 +3,7 @@
 ## Project Information
 - **Project Type**: Greenfield
 - **Start Date**: 2026-03-18T11:43:13+09:00
-- **Current Stage**: CONSTRUCTION - NFR Requirements (Unit 1: Backend API)
+- **Current Stage**: CONSTRUCTION - Build and Test (Unit 3: Admin App)
 
 ## Workspace State
 - **Existing Code**: No
