@@ -18,6 +18,7 @@ node_modules/
 target/
 build/
 dist/
+.gradle/
 
 # AIDLC
 aidlc-state.md
